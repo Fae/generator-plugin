@@ -1,0 +1,9 @@
+{
+    "extends": "../.eslintrc.json",
+    "env": {
+        "commonjs": true,
+        "browser": false,
+        "node": true,
+        "mocha": true
+    }
+}
