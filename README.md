@@ -13,7 +13,7 @@ npm install -g @fae/generator-plugin
 Then generate your new project:
 
 ```bash
-yo plugin
+yo @fae/plugin
 ```
 
 ## Getting To Know Yeoman
