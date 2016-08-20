@@ -11,11 +11,16 @@ module.exports = yeoman.Base.extend({
         // Have Yeoman greet the user.
         this.log(yosay(`${chalk.red('Fae Plugin')} generator:`));
 
-        const prompts = [
+        return this.prompt([
             {
                 type: 'input',
                 name: 'name',
                 message: 'Enter the plugin\'s name:',
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: 'Enter a short description of this plugin:',
             },
             {
                 type: 'confirm',
@@ -27,13 +32,30 @@ module.exports = yeoman.Base.extend({
                 type: 'input',
                 name: 'githubUrl',
                 message: 'Enter the URL for the github page:',
-                default: 'https://github.com/Fae/fae',
                 when: (props) => !props.isOfficial,
             },
-        ];
-
-        return this.prompt(prompts).then((props) =>
+            {
+                type: 'input',
+                name: 'authorName',
+                message: 'Author Name:',
+                when: (props) => !props.isOfficial,
+            },
+            {
+                type: 'input',
+                name: 'authorEmail',
+                message: 'Author Email:',
+                when: (props) => !props.isOfficial,
+            },
+        ])
+        .then((props) =>
         {
+            if (props.isOfficial)
+            {
+                props.githubUrl = 'https://github.com/Fae/fae';
+                props.authorName = 'Chad Engler';
+                props.authorEmail = 'chad@pantherdev.com';
+            }
+
             // To access props later use this.props.someAnswer;
             this.props = props;
         });

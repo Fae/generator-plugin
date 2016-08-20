@@ -7,11 +7,19 @@ const helpers = require('yeoman-test');
 describe('generator-plugin:app', () =>
 {
     before(() => helpers.run(path.join(__dirname, '../generators/app'))
-        .withPrompts({ someAnswer: true })
+        .withPrompts({
+            name: 'test',
+            description: 'test desc',
+            isOfficial: true,
+        })
         .toPromise());
 
     it('creates files', () =>
     {
-        assert.file(['dummyfile.txt']);
+        assert.file([
+            'package.json',
+            'src/index.js',
+            'test/.eslintrc.json',
+        ]);
     });
 });
