@@ -1,4 +1,4 @@
-# generator-plugin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-plugin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 > Generator for Fae plugins
 
 ## Installation
@@ -29,8 +29,6 @@ MIT © [Chad Engler](https://github.com/englercj)
 
 
 [npm-image]: https://badge.fury.io/js/generator-plugin.svg
-[npm-url]: https://npmjs.org/package/generator-plugin
+[npm-url]: https://npmjs.org/package/@fae/generator-plugin
 [travis-image]: https://travis-ci.org/Fae/generator-plugin.svg?branch=master
 [travis-url]: https://travis-ci.org/Fae/generator-plugin
-[daviddm-image]: https://david-dm.org/Fae/generator-plugin.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Fae/generator-plugin
