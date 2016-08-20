@@ -1,0 +1,23 @@
+{
+  "name": "<% if (isOfficial) { %>@fae/<% } %><%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "author": "<%= authorName %> <<%= authorEmail%>>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "homepage": "<%= githubUrl %>#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+<%= githubUrl %>.git"
+  },
+  "bugs": {
+    "url": "<%= githubUrl %>/issues"
+  },
+  "files": [
+    "src/"
+  ],
+  "dependencies": {
+    "@fae/core": "^1.0.0",
+    "mini-signals": "^1.1.1"
+  }
+}
