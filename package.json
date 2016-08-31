@@ -1,6 +1,6 @@
 {
   "name": "@fae/generator-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generator for Fae plugins",
   "author": "Chad Engler <chad@pantherdev.com>",
   "license": "MIT",
