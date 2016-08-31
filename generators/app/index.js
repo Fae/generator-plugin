@@ -65,7 +65,7 @@ module.exports = yeoman.Base.extend({
     {
         // root files
         this.fs.copyTpl(
-            this.templatePath('package.json'),
+            this.templatePath('_package.json'),
             this.destinationPath('package.json'),
             this.props
         );
@@ -78,7 +78,7 @@ module.exports = yeoman.Base.extend({
 
         // test files
         this.fs.copy(
-            this.templatePath('test/_.eslintrc.json'),
+            this.templatePath('test/_eslintrc.json'),
             this.destinationPath('test/.eslintrc.json')
         );
     },

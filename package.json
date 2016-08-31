@@ -25,7 +25,7 @@
     "yeoman-generator"
   ],
   "files": [
-    "generators"
+    "generators/"
   ],
   "dependencies": {
     "yeoman-generator": "^0.24.1",
